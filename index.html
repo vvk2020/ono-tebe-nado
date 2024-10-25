@@ -11,16 +11,16 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <ul class="header__menu">
-          <li class="header__menu-main">
-            <a href="#0">главная</a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit">
+            <a class="header__link_active">главная</a>
           </li>
-          <li>
+          <li class="header__links-list-item">
             <!-- добавить переход по id к секции лотов -->
             <a href="#0">посмотреть лоты</a>
           </li>
-          <li>
+          <li class="header__links-list-item">
             <!-- добавить переход по id к секции аукциона -->
             <a href="#0">об аукционе</a>
           </li>
@@ -33,14 +33,34 @@
           alt="Логотип"
         />
       </a>
-      <contacts>
-        <a href="">+9 999 555 5555</a>
-        <a href="">info@sobaka.ge</a>
-        <a href="">наб. Принсенграхт 263- 265, Амстердам</a>
-      </contacts>
+      <address class="header__address">
+        <a href="tel:++99995555555">+9 999 555 5555</a><br />
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        <a class="header__link_active"
+          >наб. Принсенграхт 263-<br />265, Амстердам</a
+        >
+      </address>
     </header>
-    <!-- <section class="cover"></section> -->
-    <!-- <section class="cover"></section> -->
+    <section class="cover">
+      <!-- <img class="cover__overlay" src="./images/cover.jpg" alt="Картинка" /> -->
+      <!-- <article class="cover"></article> -->
+      <article class="cover__title">
+        <h1 class="cover__title-left">
+          <span class="cover__title-tightly">о</span
+          ><span class="cover__title-wide">н</span
+          ><span class="cover__title-tightly">о</span>
+        </h1>
+        <h1 class="cover__title-center">
+          <span class="cover__title-tightly">те</span
+          ><span class="cover__title-wide">б</span
+          ><span class="cover__title-tightly">е</span>
+        </h1>
+        <h1 class="cover__title-right">
+          <span class="cover__title-wide">н</span
+          ><span class="cover__title-tightly">ад</span><span class="cover__title-glued">о</span>
+        </h1>
+      </article>
+    </section>
     <!-- <section class="lots"></section> -->
     <!-- <section class="about"></section> -->
     <!-- <footer></footer> -->
