@@ -1,3 +1,7 @@
+:root {
+  --font-color-light: #fff;
+}
+
 *,
 *::before,
 *::after {
