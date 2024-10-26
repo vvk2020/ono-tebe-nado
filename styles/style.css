@@ -65,10 +65,6 @@
   position: relative;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.6;
 }
 
 /******* Заголовок *******/
@@ -138,8 +134,7 @@
   font-size: 22px;
   background-color: transparent;
   text-transform: uppercase;
-  color: var(--font-color-light);/*red; /*#ffffff; */
-  /*word-spacing: 0.84em; /* word-spacing: 18.5px; */
+  color: var(--font-color-light);
 }
 
 .cover__description-text {
@@ -151,24 +146,119 @@
 }
 
 .cover__bet-button {
-  /* position: absolute; */
-  /* left: 78px; */
-  /* top: 667px; */
-  /* display: block; */
   align-self: center center;
   width: 256px;
   height: 50px;
   font-weight: 500;
   text-align: center;
-  /* vertical-align: middle; */
-  align-content: center; 
-
-  /* font-size: 22px; */
-  /* line-height: 1.273; */
+  align-content: center;
   background-color: transparent;
-  /* text-transform: uppercase; */
   text-decoration: none;
-  /* color: red; #ffffff; */
   border: 1px solid var(--font-color-light);
-  /*word-spacing: 0.84em; /* word-spacing: 18.5px; */
+}
+
+/* ======= ЛОТЫ ======= */
+
+.lots {
+  height: 692px;
+  width: 1052px;
+  margin: 179px auto 0 auto;
+  color: var(--font-color-dark);
+}
+
+.lots__title {
+  padding-left: 40px;
+  /* color: aqua; */
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__list {
+  margin-top: 27px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  list-style: none;
+  /* background-color: transparent; */
+}
+
+.lot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px 48px;
+  height: 563px;
+  color: var(--font-color-light);
+}
+
+.lot__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.lot__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lot__title,
+.lot__title a,
+.lot__text,
+.lot__text p,
+.lot__text_stretch,
+.lot_text_wide {
+  background-color: transparent;
+}
+
+.lot_text_wide {
+  /* многоточие в последнем лоте */
+  letter-spacing: 0.13em;
+}
+
+.lot__text_stretch {
+  /* удлиненное тире (&mdash; и &#8212; - короткие) */
+  font-stretch: ultra-condensed;
+}
+
+.lot__link__next_page {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-size: 20px;
+  text-underline-offset: 5px;
+}
+
+.lot__image {
+  display: block;
+  width: 334px;
+  height: 564px;
+}
+
+.lot__image_anderson {
+  background: url(../images/card-lot-01.jpg);
+}
+
+.lot__image_joyce {
+  background: url(../images/card-lot-02.jpg);
+}
+
+.lot__image_kandinsky {
+  background: url(../images/card-lot-03.jpg);
+}
+
+.cover,
+.lot__image_anderson,
+.lot__image_joyce,
+.lot__image_kandinsky {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color;
 }
