@@ -5,7 +5,7 @@
   grid-template-columns: 454px 148px 1fr;
   gap: 0;
   align-items: center;
-  margin: 89px auto 99px auto; /* Pixel Perfect: 92px auto 96px auto; */
+  margin: 89px auto 99px; /* Pixel Perfect: 92px auto 96px auto; */
   font-size: 18px;
 }
 
@@ -13,18 +13,33 @@
 
 /********* Меню *******/
 
-.header__links-list {
+.links-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   width: auto;
   line-height: 1.22;
   list-style: circle;
-  padding: 44px 36px 39px 26.52px;
+  /* padding: 44px 36px 39px 26.52px; */
   font-size: 18px;
   text-underline-offset: 4px;
-  letter-spacing: 0.01em; /* 1%; */
-  color: #000000;
+  /* letter-spacing: 0.01em; /* 1%; */
+  color: --font-color-dark; /*#000000;*/
+}
+
+.header .links-list {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: auto; */
+  line-height: 1.22;
+  /* list-style: circle; */
+  padding: 44px 36px 39px 26.52px;
+  /* font-size: 18px; */
+  /* text-underline-offset: 4px; */
+  letter-spacing: 0.01em; /* 1%;
+  /* color: --font-color-dark; /*#000000;*/
+  background-color:blanchedalmond;
 }
 
 .header__links-list-item_no-bullit {
@@ -49,12 +64,15 @@
 
 /********* Контакты *******/
 
-.header__address {
-  padding: 5px 25.48px 2px 184px;
+.address {
   font-style: normal;
   letter-spacing: 0.01em; /* 1% */
   line-height: 24.3px;
-  text-underline-offset: 4px; /* сдвиг почеркивания вниз */
+  text-underline-offset: 4px; /* сдвиг линии подчеркивания вниз */
+}
+
+.header .address {
+  padding: 5px 25.48px 2px 184px;
 }
 
 /* ======= COVER ======= */
@@ -108,18 +126,6 @@
   background-color: transparent;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 0.3em;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
-.letter-spacing-wide {
-  letter-spacing: 0.6em;
-}
-
 /******* Подзаголовок с кнопкой *******/
 
 .cover__description {
@@ -168,7 +174,6 @@
 
 .lots__title {
   padding-left: 40px;
-  /* color: aqua; */
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -180,7 +185,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   list-style: none;
-  /* background-color: transparent; */
 }
 
 .lot {
@@ -261,4 +265,103 @@
   background-position: center;
   background-size: cover;
   background-blend-mode: color;
+}
+
+/* ======= ABOUT ======= */
+
+.about {
+  width: 1052px;
+  /* height: 595px; /* высота подстраивается автоматически по about_description__text */
+  margin: 146px auto 180px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 334px 1fr;
+  justify-items: center;
+  align-items: start;
+}
+
+.about__logo-box {
+  margin-top: 35px;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
+  /* border: 1px solid red; */
+}
+
+.about__logo-box__image {
+  margin: auto;
+  width: 148px;
+  height: 114px;
+  background-color: transparent;
+}
+
+.about__description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 136px;
+  color: var(--font-color-dark);
+}
+
+.about__description__title {
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about_description__text:not(:last-of-type) {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.about_description__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+/* ======= ABOUT ======= */
+
+.footer {
+  margin: 0 auto 88px;
+  width: 1000px;
+  height: 98px;
+  display: grid;
+  grid-template-columns: 426px 150px 1fr;
+  align-items: start;/*center;*/
+  gap: 0;  
+  font-size: 18px;
+  /* border: 1px solid navy; */
+}
+
+.footer .address {
+  padding: 0;
+  /* background-color: aquamarine; */
+}
+
+.footer .links-list {
+  /* display: flex; */
+  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start; /* space-between; */
+  align-items: center;
+  list-style: none;
+  /* height: 120px; */
+  /* width: auto; */
+  /* line-height: 1.22; */
+  /* list-style: circle; */
+  /* padding: 44px 36px 39px 26.52px; */
+  /* font-size: 18px; */
+  /* text-underline-offset: 4px; */
+  letter-spacing: normal; /* 0%; */
+  color: red;/*--font-color-dark; /*#000000;*/
+  background-color: aquamarine;
+  /* border: 1px solid red; */
 }
