@@ -75,9 +75,13 @@
   background-image: url(../images/cover.jpg);
 }
 
-/******* Заголовок *******/
+/******* Основной заголовок *******/
 
 .cover__title {
+  background-color: transparent;
+}
+
+.cover__title_text {
   position: absolute;
   top: 165px;
   left: 50px;
@@ -97,20 +101,20 @@
   background-color: transparent;
 }
 
-.cover__title__aligned-text_left {
+.cover__title__text__align-left {
   align-self: start;
   line-height: 1.15;
   background-color: transparent;
 }
 
-.cover__title__aligned-text_center {
+.cover__title__text__align-center {
   align-self: center;
   margin-left: -30px;
   line-height: 1;
   background-color: transparent;
 }
 
-.cover__title__aligned-text_right {
+.cover__title__text__align-right {
   align-self: end;
   line-height: 1;
   background-color: transparent;
