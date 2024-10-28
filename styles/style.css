@@ -139,6 +139,7 @@
   font-size: 22px;
   word-spacing: 0.84em; /* 18.5px */
   background-color: transparent;
+  white-space: nowrap;
 }
 
 .cover__bet-button {
