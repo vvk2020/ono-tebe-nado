@@ -1,38 +1,16 @@
 /* ======= letter-spacing ======= */
 
-.letter-spacing-001em {
-  letter-spacing: -0.01em;
-}
-
 .no-letter-spacing {
-  /* letter-spacing_0em */
   letter-spacing: normal; /* 0% */
 }
 
-.letter-spacing_001em {
-  letter-spacing: 0.01em;
-}
-
-.letter-spacing_002em {
-  letter-spacing: 0.02em;
-}
-
-.letter-spacing_003em {
-  letter-spacing: 0.03em;
-}
-
-.letter-spacing_004em {
-  letter-spacing: 0.04em;
-}
-
-.letter-spacing-extended {
-  /* letter-spacing_03em */
-  letter-spacing: 0.3em;
-}
-
 .letter-spacing-wide {
-  /* letter-spacing_06em */
   letter-spacing: 0.6em;
+}
+
+.lot__text_stretch {
+  /* удлиненное тире (&mdash; и &#8212; - короткие) */
+  font-stretch: ultra-condensed;
 }
 
 /* ======= HEADER ======= */
@@ -111,28 +89,27 @@
 /******* Фоновое изображение *******/
 
 .cover {
-  padding: 0 50px 0;
   min-height: 757px;
-  background: url(../images/cover.jpg) no-repeat center / cover;
   border: 1px solid transparent; /* для корректного расположения cover__title */
+  padding: 0 50px 0;
+  background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
 /******* Основной заголовок *******/
 
 .cover__title {
-  width: 1000px;
-  margin: 165px auto 135px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: transparent;
-
+  width: 1000px;
+  margin: 165px auto 135px;
   color: var(--font-color-light);
   font-weight: 700;
   font-size: 100px;
-  text-transform: uppercase;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .cover__title span {
@@ -188,9 +165,9 @@
   min-width: 256px;
   min-height: 51px;
   border: 1px solid var(--font-color-light);
-  background-color: transparent;
   font-weight: 500;
   text-decoration: none;
+  background-color: transparent;
 }
 
 /* ======= ЛОТЫ ======= */
@@ -218,13 +195,12 @@
 }
 
 .lot {
-  height: 100%; /* карточки лотов grid-строки должны быть одинаковой высоты */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%; /* лоты grid-строки должны быть одинаковой высоты */
   padding: 51px 40px 48px;
   color: var(--font-color-light);
-  /* background-color: transparent; */
 }
 
 .lot__title {
@@ -241,9 +217,7 @@
 }
 
 .lot__title,
-/* .lot__title h3, */
 .lot__text,
-.lot__text p,
 .lot__text_stretch,
 .lot_text_wide {
   /* При удалении transparent появляется #fff-фон 
@@ -255,11 +229,6 @@
 .lot_text_wide {
   /* многоточие в последнем лоте */
   letter-spacing: 0.13em;
-}
-
-.lot__text_stretch {
-  /* удлиненное тире (&mdash; и &#8212; - короткие) */
-  font-stretch: ultra-condensed;
 }
 
 .lot__link__next_page {
