@@ -8,11 +8,6 @@
   letter-spacing: 0.6em;
 }
 
-.lot__text_stretch {
-  /* удлиненное тире (&mdash; и &#8212; - короткие) */
-  font-stretch: ultra-condensed;
-}
-
 /* ======= HEADER ======= */
 
 .header {
@@ -30,7 +25,7 @@
 .links-list {
   display: flex;
   width: auto;
-  color: --font-color-dark;
+  color: var(--font-color-dark);
   font-size: 18px;
   line-height: 1.22;
   text-underline-offset: 4px;
@@ -58,7 +53,7 @@
 /********* Логотип *******/
 
 .header__logo {
-  place-self: center; /* padding: 2px -8px 0.61px 9.03px; */
+  place-self: center;
 }
 
 .header__logo-image {
@@ -109,7 +104,6 @@
   font-size: 100px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  background-color: transparent;
 }
 
 .cover__title span {
@@ -174,7 +168,7 @@
 
 .lots {
   width: 1052px;
-  margin: 179px auto 0 auto;
+  margin: 179px auto 0;
   color: var(--font-color-dark);
 }
 
@@ -198,7 +192,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%; /* лоты grid-строки должны быть одинаковой высоты */
-  padding: 51px 40px 48px;
+  padding: 51px 40px 46px;
   color: var(--font-color-light);
 }
 
@@ -218,21 +212,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-}
-
-.lot__title,
-.lot__text,
-.lot__text_stretch,
-.lot_text_wide {
-  /* При удалении transparent появляется #fff-фон 
-текста карточек, т.к. он наследуется из global.css
-(*, *::before, *::after)   */
-  background-color: transparent;
-}
-
-.lot_text_wide {
-  /* многоточие в последнем лоте */
-  letter-spacing: 0.13em;
 }
 
 .lot__link__next_page {
@@ -277,8 +256,7 @@
   align-items: start;
   gap: 25px;
   width: 1052px;
-  /* height: 595px; /* высота подстраивается автоматически по about_description__text */
-  margin: 146px auto 180px;
+  margin: 148px auto 180px;
 }
 
 .about__logo-box {
@@ -348,13 +326,12 @@
   justify-content: start;
   align-items: center;
   padding: 0;
-  letter-spacing: normal; /* 0% */
+  letter-spacing: normal;
   list-style: none;
 }
 
 .footer__logo-image {
   height: 48px;
-  /* width: 48px; /* ширина новых logo может быть другой */
 }
 
 .footer__socals-links {
